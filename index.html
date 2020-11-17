@@ -1,62 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Jogo da memória</title>
+
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <main class="memory-game">
-        <div class="card" data-card="bowser">
-            <img class="card-front" src="./img/bowser.jpg" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+
+    <div class="container">
+        <div class="logo-img">
+          <a href="#">
+            <img src="img/logo.png" alt="Logo do jogo">
+          </a>
         </div>
-        <div class="card" data-card="luigi">
-            <img class="card-front" src="./img/luigi.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+
+        <div class="level">
+            <div class="form-level">
+                <select id="nivel" class="form-control">
+                    <option value="">Selecione um nível</option>
+                    <option value="normal">Normal</option>
+                    <option value="Dificil">Dificil</option>
+                    <option value="Expert">Expert</option>
+                </select>
+            </div>
         </div>
-        <div class="card" data-card="mario">
-            <img class="card-front" src="./img/mario.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+
+        <div class="button">
+            <button type="button" class="button-start" onclick="iniciarJogo()">Iniciar jogo</button>
         </div>
-        <div class="card" data-card="peach">
-            <img class="card-front" src="./img/peach.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="toad">
-            <img class="card-front" src="./img/toad.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="yoshi">
-            <img class="card-front" src="./img/yoshi.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="bowser">
-            <img class="card-front" src="./img/bowser.jpg" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="luigi">
-            <img class="card-front" src="./img/luigi.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="mario">
-            <img class="card-front" src="./img/mario.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="peach">
-            <img class="card-front" src="./img/peach.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="toad">
-            <img class="card-front" src="./img/toad.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="yoshi">
-            <img class="card-front" src="./img/yoshi.png" alt="Face da carta">
-            <img class="card-back" src="./img/box.png" alt="Verso da carta">
-        </div>
-    </main>
-    <script src="./script.js"></script>
+        
+        
+        
+
+    </div>
 </body>
 </html>
